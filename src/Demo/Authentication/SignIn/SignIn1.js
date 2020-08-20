@@ -34,28 +34,26 @@ class SignUp1 extends React.Component {
 
         let headers =
         {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+             "token"  : localStorage.getItem('token')
         }
         const data = { email: this.state.email, password: this.state.password }
         console.log(data);
-    let response = await fetch('http://localhost:3000/student/login', { method: 'POST', body: JSON.stringify(data), headers: headers });
+     let response = await fetch('http://localhost:3000/student/login', { method: 'POST', body: JSON.stringify(data), headers: headers });
         console.log("response: "+response)
         let json = await response.json();
         console.log("token : " + json.access_token)
         console.log("email : "+ json.email)
-       if(json.token)
+         if(json.accountType == "Student")
        {
         toast.success("Wellcome to the Student Managment System!!")
-
+         
         localStorage.setItem('token', json.token);
             localStorage.setItem('email', json.email);
             localStorage.setItem('name', json.name);
             localStorage.setItem('accountType', json.accountType);
-
-            
-            this.props.history.push('/dashboard/default');
+            this.props.history.push('/Aggr/exploreTutor');
        }
-        
        else
        {
            toast.error("Invalid Email or Password. Please try Again!!")

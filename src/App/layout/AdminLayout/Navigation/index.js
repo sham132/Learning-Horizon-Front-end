@@ -9,7 +9,7 @@ import OutsideClick from './OutsideClick';
 import Aux from './../../../../hoc/_Aux'
 import * as actionTypes from './../../../../store/actions';
 import navigation from '../../../../menu-items';
-
+import navigation2 from '../../../../menu-items2';
 class Navigation extends Component {
 
     resize = () => {
@@ -29,11 +29,14 @@ class Navigation extends Component {
         window.removeEventListener('resize', this.resize)
     }
 
+
+    
     render() {
         let navClass = [
             'pcoded-navbar',
         ];
 
+        let accountType = localStorage.getItem('accountType');
         if (this.props.preLayout !== null && this.props.preLayout !== '' && this.props.preLayout !== 'layout-6' && this.props.preLayout !== 'layout-8') {
             navClass = [...navClass, this.props.preLayout];
         } else {
@@ -105,27 +108,55 @@ class Navigation extends Component {
             document.body.classList.remove('box-layout');
         }
 
-        let navContent = (
-            <div className="navbar-wrapper">
-                <NavLogo collapseMenu={this.props.collapseMenu} windowWidth={this.props.windowWidth} onToggleNavigation={this.props.onToggleNavigation} />
-                <NavContent navigation={navigation.items} />
-            </div>
-        );
-        if (this.props.windowWidth < 992) {
+        let navContent;
+           
+        if(accountType== "Student")
+        {
             navContent = (
-                <OutsideClick>
-                    <div className="navbar-wrapper">
-                        <NavLogo collapseMenu={this.props.collapseMenu} windowWidth={this.props.windowWidth} onToggleNavigation={this.props.onToggleNavigation} />
-                        <NavContent navigation={navigation.items} />
-                    </div>
-                </OutsideClick>
-            );
+         
+                <div className="navbar-wrapper">
+                    <NavLogo collapseMenu={this.props.collapseMenu} windowWidth={this.props.windowWidth} onToggleNavigation={this.props.onToggleNavigation} />
+    
+                  
+    
+                    <NavContent navigation={navigation2.items} />  
+                </div> 
+            ); 
         }
+        else
+        {
+            navContent = (
+         
+                <div className="navbar-wrapper">
+                    <NavLogo collapseMenu={this.props.collapseMenu} windowWidth={this.props.windowWidth} onToggleNavigation={this.props.onToggleNavigation} />
+    
+    
+                    <NavContent navigation={navigation.items} />  
+                </div> 
+            ); 
+        }
+       
+            
+        
+           
+             
+
+        // if (this.props.windowWidth < 992) {
+        //     navContent = (
+        //         <OutsideClick>
+        //             <div className="navbar-wrapper">
+        //                 <NavLogo collapseMenu={this.props.collapseMenu} windowWidth={this.props.windowWidth} onToggleNavigation={this.props.onToggleNavigation} />
+        //                 {/* <NavContent navigation={navigation2.items} /> */}
+        //             </div>
+        //         </OutsideClick>
+        //     );
+        // }
 
         return (
             <Aux>
                 <nav className={navClass.join(' ')}>
-                    {navContent}
+            
+               {navContent} 
                 </nav>
             </Aux>
         );

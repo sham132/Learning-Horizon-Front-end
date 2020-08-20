@@ -6,20 +6,19 @@ window.$ = $;
 global.jQuery = $;
 const DashboardDefault = React.lazy(() => import('./Demo/Dashboard/Default'));
 
-//const TAVUS = React.lazy(() => import('./Demo/TAVUS/Tavus'));
-const addNumberList = React.lazy(() => import('./Demo/Aggr/addNumberList'));
-const createCompaign = React.lazy(() => import('./Demo/Aggr/createCompaigns'));
-const sendSmsList = React.lazy(() => import('./Demo/Aggr/sendSmsList'));
-const CampaignList = React.lazy(() => import('./Demo/Aggr/CampaignList'));
+//const TAVUS = React.lazy(() => import('./Demo/TAVUS/Tavus'));   //exploreTutor
+const TutorValidation = React.lazy(() => import('./Demo/Aggr/TutorValidation'));
+
+const exploreTutor = React.lazy(() => import('./Demo/Aggr/exploreTutor'));
+
 const routes = [
 
     { path: '/dashboard/default', exact: true, name: 'Default', component: DashboardDefault },
-    { path: '/Aggr/addNumberList', exact: false, name: 'addNumberList', component: addNumberList },  
-    { path: '/Aggr/createCompaign', exact: false, name: 'sendSms', component: createCompaign }, 
-    { path: '/Aggr/sendSmsList', exact: false, name: 'sendSmsList', component: sendSmsList },
-    { path: '/Aggr/CampaignList', exact: false, name: 'CampaignList', component: CampaignList },
-    // { path: '/TAVUS/addTemplate', exact: true, name: 'addTemplate', component: addTemplate // CampaignList },
-    // { path: '/TAVUS/templateList', exact: true, name: 'templateList', component: templateList }
+    { path: '/Aggr/TutorValidation', exact: false, name: 'TutorValidation', component: TutorValidation },  
+    { path: '/Aggr/exploreTutor', exact: false, name: 'exploreTutor', component: exploreTutor },  
+    
+    
+
 ];
 
 export default routes;

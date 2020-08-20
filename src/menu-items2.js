@@ -11,19 +11,13 @@ export default {
             type: 'group',
             icon: 'icon-navigation',
             children: [
-                // {
-                //     id: 'dashboard',
-                //     title: 'Dashboard',
-                //     type: 'item',
-                //     url: '/dashboard/default',
-                //     icon: 'feather icon-home',
-                // }
+             
             ]
         },
      
         {
             id: 'ui-forms',
-            title: 'Tutor Portal',
+            title: 'Student Portal',
             type: 'group',
             icon: 'icon-group',
             children: [
@@ -32,9 +26,9 @@ export default {
                 
                 {
                     id: 'form-basic',
-                    title: 'Schedule Test',
+                    title: 'Search Tutor',
                     type: 'item',
-                    url: '/Aggr/TutorValidation',
+                    url: '/Aggr/exploreTutor',
                     icon: 'feather icon-file-text'
                 },
                

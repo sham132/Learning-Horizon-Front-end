@@ -14,7 +14,8 @@ const navLogo = (props) => {
                  <a href={DEMO.BLANK_LINK} className="b-brand">
                   
                       <div>
-               &nbsp;&nbsp;&nbsp;&nbsp;<img  style={{padding: -2, alignSelf: 'flex-start'}} src={require('./PMD-Logo.png') }  width="120" height="60" alt="logo"/>
+                          <b>LH</b>
+               {/* &nbsp;&nbsp;&nbsp;&nbsp;<img  style={{padding: -2, alignSelf: 'flex-start'}} src={require('./PMD-Logo.png') }  width="120" height="60" alt="logo"/> */}
                 </div>
                 
                  </a>

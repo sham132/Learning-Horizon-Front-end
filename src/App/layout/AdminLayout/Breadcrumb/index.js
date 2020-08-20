@@ -3,14 +3,25 @@ import {Link} from 'react-router-dom';
 
 import config from '../../../../config';
 import navigation from '../../../../menu-items';
+
+   
 import DEMO from "../../../../store/constant";
 import Aux from "../../../../hoc/_Aux";
+
+let accountType = localStorage.getItem('Student');
+
+
+
 
 class Breadcrumb extends Component {
     state = {
         main: [],
         item: []
     };
+
+
+
+
 
     componentDidMount() {
         (navigation.items).map((item, index) => {

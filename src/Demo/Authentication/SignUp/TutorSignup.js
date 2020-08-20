@@ -41,7 +41,7 @@ class TutorSignup extends React.Component {
         console.log("response: "+ JSON.stringify(response))
         let json = await response.json();
 
-        console.log("jjjj :"+    JSON.stringify(json))
+     
        if(json.success)  
        {
         toast.success(json.success)
