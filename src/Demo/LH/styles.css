@@ -1,0 +1,47 @@
+.Table__itemCount {
+    /* margin-top: 10px; */
+    font-size: 14px;
+  }
+  
+  .Table__pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 10px;
+  }
+  
+  .Table__pageButton {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  /* Quiz Component */
+.answerOptions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  .Table__pageButton:disabled {
+    cursor: not-allowed;
+    color: gray;
+  }
+  
+  .Table__pageButton--active {
+    color: #45b3e3;
+    font-weight: bold;
+  }
+  
+  .auth-wrapper {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 85vh;
+
+}

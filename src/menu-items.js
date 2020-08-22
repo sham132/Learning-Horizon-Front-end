@@ -34,7 +34,7 @@ export default {
                     id: 'form-basic',
                     title: 'Schedule Test',
                     type: 'item',
-                    url: '/Aggr/TutorValidation',
+                    url: '/LH/TutorValidation',
                     icon: 'feather icon-file-text'
                 },
                

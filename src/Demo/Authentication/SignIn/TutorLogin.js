@@ -54,7 +54,7 @@ class TutorLogin extends React.Component {
 
 
 
-            this.props.history.push('/Aggr/TutorValidation');
+            this.props.history.push('/LH/TutorValidation');
         }
 
         else {

@@ -52,7 +52,7 @@ class SignUp1 extends React.Component {
             localStorage.setItem('email', json.email);
             localStorage.setItem('name', json.name);
             localStorage.setItem('accountType', json.accountType);
-            this.props.history.push('/Aggr/exploreTutor');
+            this.props.history.push('/LH/exploreTutor');
        }
        else
        {

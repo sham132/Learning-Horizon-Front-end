@@ -10,8 +10,11 @@ import config from './config';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+
 toast.configure()
 const store = createStore(reducer);
+
 
 const app = (
     <Provider store={store}>
@@ -22,6 +25,7 @@ const app = (
     </Provider>
      
 );
+
 
 ReactDOM.render(app, document.getElementById('root'));
 

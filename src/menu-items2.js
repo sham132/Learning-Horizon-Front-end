@@ -28,7 +28,7 @@ export default {
                     id: 'form-basic',
                     title: 'Search Tutor',
                     type: 'item',
-                    url: '/Aggr/exploreTutor',
+                    url: '/LH/exploreTutor',
                     icon: 'feather icon-file-text'
                 },
                
