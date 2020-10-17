@@ -40,7 +40,7 @@ class SignUp1 extends React.Component {
         const data = { email: this.state.email, password: this.state.password }
         console.log(data);
      let response = await fetch('http://localhost:3000/student/login', { method: 'POST', body: JSON.stringify(data), headers: headers });
-        console.log("response: "+response)
+        console.log("response: "+ JSON.stringify(response))
         let json = await response.json();
         console.log("token : " + json.access_token)
         console.log("email : "+ json.email)

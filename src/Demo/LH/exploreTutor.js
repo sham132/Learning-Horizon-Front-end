@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col, Card, Table ,Pagination} from 'react-bootstrap';
 import Swal from 'sweetalert2'
 import Aux from "../../hoc/_Aux";
-import DataTable from 'react-data-table-component';
 import MUIDataTable from "mui-datatables";
-import Button from "@material-ui/core/Button";
 
 
    // The gray background

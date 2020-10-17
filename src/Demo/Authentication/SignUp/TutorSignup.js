@@ -3,8 +3,6 @@ import {NavLink} from 'react-router-dom';
 
 import './../../../assets/scss/style.scss';
 import Aux from "../../../hoc/_Aux";
-import Breadcrumb from "../../../App/layout/AdminLayout/Breadcrumb";
-import DEMO from "../../../store/constant";
 import {  toast } from 'react-toastify';
 
 
@@ -38,6 +36,8 @@ class TutorSignup extends React.Component {
         const data = {name: this.state.name , phone: this.state.phone, email: this.state.email, password: this.state.password , address : this.state.address, expertise : this.state.expertise}
         console.log(data);
           let response = await fetch('http://localhost:3000/tutor/signup', { method: 'POST', body: JSON.stringify(data), headers: headers });
+
+
         console.log("response: "+ JSON.stringify(response))
         let json = await response.json();
 
