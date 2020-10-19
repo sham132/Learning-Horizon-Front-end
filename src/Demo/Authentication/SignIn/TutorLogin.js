@@ -50,7 +50,7 @@ class TutorLogin extends React.Component {
             localStorage.setItem('email', json.email);
             localStorage.setItem('name', json.name);
             localStorage.setItem('accountType', json.accountType);
-            localStorage.setItem('expertise', json.expertise);
+            localStorage.setItem('expertise', json.expertise.toLowerCase());
 
 
 
