@@ -104,13 +104,23 @@ class exploreTutor extends Component {
               filter: true,
               selectableRows:true
             }
+          },
+          {
+            name: "Scheduling",
+            options: {
+              customBodyRender: (value, tableMeta, selectedRows, index) => {
+    
+               
+    
+                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[0])}  >
+                  Available Time
+              </button>
+    
+    
+              }
+            }
           }];
         var data2 = [];
-        let active = 3;
-        let disabled = 4;
-        let items = [];
-        let activeItems = [];
-        let disabledItems = [];
         const { open } = this.state;
             let dataobj=[];
         let ayr=[];
@@ -123,58 +133,11 @@ class exploreTutor extends Component {
 
         Array.from(dd).forEach((pp)=>
         {
-            delete pp["tempid"];
-           // delete pp["id"];
-            delete pp["userid"];
-            delete pp["created_at"];
+           
             var values = Object.values(pp);
             data2.push(values);
         })
 
-
-
-
-
-
-        
-
-//         let jsonp= JSON.parse(dd);
-        
-// dd.forEach((e)=>
-// {
-// var values = Object.values(e);
-// console.log(values);
-// })
-
-
-
-
-
-      
-     
-        // for(const [key, value1] of Object.entries(data1)) {
-        //     console.log("value1 "+  JSON.stringify(value1));
-        //     data2.push([value1]);
-        // }
-        
-       
-
-        // console.log("data1 "+   JSON.stringify(data1));
-        // console.log("arrData "+   arrData);
-        // for (const [key, value] of Object.entries(dd)) {
-
-        //     arrData.push(value);
-        //     for (const [key, value1] of Object.entries(value)) {
-               
-        //         console.log("value1 "+ JSON.stringify(value1));
-        //         data_.push(value1);
-        //     }
-        //   }
-
-
-        // {this.state.data.map(event => (
-        //     console.log(event.reqtemp)
-        // ))}
 
         return (
 
@@ -182,56 +145,12 @@ class exploreTutor extends Component {
             <Aux>
                 <Row>
                     <Col>
-
-                        {/* <Card>
-                            <Card.Header>
-                                <Card.Title as="h5">Template List</Card.Title>
-                            </Card.Header>
-                            <Card.Body> */}
-
-                          
-                                {/* <Table className={" table-striped"}  class="table-striped"  >
-                                    <thead>
-                                        <tr>
-                                            <th>Template ID</th>
-                                            <th>User</th>
-
-                                            <th>Request Template</th>
-                                            <th>Response Template</th>
-                                            <th>Options</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {this.state.data.map(event => (<tr>
-                                            <td>{event.tempid}</td>
-
-                                            <td>{event.defUser}</td>
-                                            <td>{event.reqtemp}</td>
-                                            <td>{event.restemp}</td>
-                                            <td><button style={{ borderRadius: 50 }}  key={event.id} data-id={event.id} onClick={() => this.toogle_(event.id)} className="label theme-bg text-white f-12">View Tempalte</button></td>
-
-                                        </tr>))}
-
-
-                                    
-
-                                    </tbody>
-                                    
-
-                                </Table> */}
                                 <MUIDataTable
   title={"Explore Tutor"}
   data={data2}
   columns={columns}
   options={options}
 />
-                               
-                            {/* </Card.Body>
-
-                                
-                        </Card>  */}
-                    
-                       
                     </Col>
                 </Row>
                 
