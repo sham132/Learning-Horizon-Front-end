@@ -15,7 +15,7 @@ const navLogo = (props) => {
                   
                       <div>
                           <b>LH</b>
-               {/* &nbsp;&nbsp;&nbsp;&nbsp;<img  style={{padding: -2, alignSelf: 'flex-start'}} src={require('./PMD-Logo.png') }  width="120" height="60" alt="logo"/> */}
+               {/*   width="120" height="60" alt="logo"/> */}
                 </div>
                 
                  </a>

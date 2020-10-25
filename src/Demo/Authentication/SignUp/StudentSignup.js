@@ -35,7 +35,7 @@ class StudentSignup extends React.Component {
         }
         const data = {name: this.state.name , phone: this.state.phone, email: this.state.email, password: this.state.password , address : this.state.address }
         console.log(data);
-          let response = await fetch('http://localhost:3000/user/signup', { method: 'POST', body: JSON.stringify(data), headers: headers });
+          let response = await fetch('http://localhost:3000/student/signup', { method: 'POST', body: JSON.stringify(data), headers: headers });
         console.log("response: "+ JSON.stringify(response))
         let json = await response.json();
 

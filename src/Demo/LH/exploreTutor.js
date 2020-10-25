@@ -21,9 +21,22 @@ class exploreTutor extends Component {
         super(props);
 
         this.state = { isOpen: false, data: '' };
+        this.toogle_ = this.toogle_.bind(this);
 
     }
 
+
+    toogle_ = async (i) => {
+
+
+      this.props.history.push(
+        {
+          pathname:"/LH/tutorschedule",
+          state: i
+        }
+      );
+
+    }
     async componentDidMount() {
 
 
@@ -112,8 +125,8 @@ class exploreTutor extends Component {
     
                
     
-                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[0])}  >
-                  Available Time
+                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[4])}  >
+                  check Tutor Schedule
               </button>
     
     
