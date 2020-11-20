@@ -10,6 +10,7 @@ import Aux from './../../../../hoc/_Aux'
 import * as actionTypes from './../../../../store/actions';
 import navigation from '../../../../menu-items';
 import navigation2 from '../../../../menu-items2';
+import navigation3 from '../../../../menu-items3';
 class Navigation extends Component {
 
     resize = () => {
@@ -120,6 +121,21 @@ class Navigation extends Component {
                   
     
                     <NavContent navigation={navigation2.items} />  
+                </div> 
+            ); 
+        }
+
+        else if(accountType== "Admin")
+        {
+
+            navContent = (
+         
+                <div className="navbar-wrapper">
+                    <NavLogo collapseMenu={this.props.collapseMenu} windowWidth={this.props.windowWidth} onToggleNavigation={this.props.onToggleNavigation} />
+    
+                  
+    
+                    <NavContent navigation={navigation3.items} />  
                 </div> 
             ); 
         }

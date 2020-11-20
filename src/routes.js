@@ -11,6 +11,7 @@ const TutorValidation = React.lazy(() => import('./Demo/LH/TutorValidation'));
 
 const exploreTutor = React.lazy(() => import('./Demo/LH/exploreTutor'));
 const tutorschedule = React.lazy(() => import('./Demo/LH/tutorschedule'));
+const addQuestions = React.lazy(() => import('./Demo/LH/addQuestions'));
 
 const routes = [
 
@@ -18,6 +19,7 @@ const routes = [
     { path: '/LH/TutorValidation', exact: false, name: 'TutorValidation', component: TutorValidation },  
     { path: '/LH/exploreTutor', exact: false, name: 'exploreTutor', component: exploreTutor },  
     { path: '/LH/tutorschedule', exact: false, name: 'tutorschedule', component: tutorschedule },  
+    { path: '/LH/addQuestions', exact: false, name: 'addQuestions', component: addQuestions },  
     
     
 
