@@ -21,7 +21,7 @@ export default {
             type: 'group',
             icon: 'icon-group',
             children: [
-             
+                
                 
                 
                 {
@@ -29,6 +29,20 @@ export default {
                     title: 'Questions',
                     type: 'item',
                     url: '/LH/AddQuestions',
+                    icon: 'feather icon-file-text'
+                },
+                {
+                    id: 'form-basic',
+                    title: 'Fee Per Subject',
+                    type: 'item',
+                    url: '/LH/feePerSubject',
+                    icon: 'feather icon-file-text'
+                },
+                {
+                    id: 'form-basic',
+                    title: 'Generate Fee Voucher',
+                    type: 'item',
+                    url: '/LH/generateFee',
                     icon: 'feather icon-file-text'
                 },
                

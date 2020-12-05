@@ -12,7 +12,8 @@ const TutorValidation = React.lazy(() => import('./Demo/LH/TutorValidation'));
 const exploreTutor = React.lazy(() => import('./Demo/LH/exploreTutor'));
 const tutorschedule = React.lazy(() => import('./Demo/LH/tutorschedule'));
 const addQuestions = React.lazy(() => import('./Demo/LH/addQuestions'));
-
+const generateFee = React.lazy(() => import('./Demo/LH/generateFee'));  
+const feePerSubject = React.lazy(() => import('./Demo/LH/feePerSubject')); 
 const routes = [
 
     { path: '/dashboard/default', exact: true, name: 'Default', component: DashboardDefault },
@@ -20,6 +21,8 @@ const routes = [
     { path: '/LH/exploreTutor', exact: false, name: 'exploreTutor', component: exploreTutor },  
     { path: '/LH/tutorschedule', exact: false, name: 'tutorschedule', component: tutorschedule },  
     { path: '/LH/addQuestions', exact: false, name: 'addQuestions', component: addQuestions },  
+    { path: '/LH/generateFee', exact: false, name: 'generateFee', component: generateFee },  
+    { path: '/LH/feePerSubject', exact: false, name: 'feePerSubject', component: feePerSubject },  
     
     
 
