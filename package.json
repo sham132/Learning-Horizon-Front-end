@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^4.9.4",
     "@material-ui/icons": "^4.9.1",
+    "antd": "^4.9.2",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "daypilot-pro-react": "https://npm.daypilot.org/daypilot-pro-react/trial/2018.2.3297.tar.gz",
@@ -53,6 +54,7 @@
     "react-table-6": "^6.11.0",
     "react-tilt": "^0.1.4",
     "react-timekeeper": "^2.1.1",
+    "react-to-pdf": "0.0.13",
     "react-toast-notifications": "^2.4.0",
     "react-toastify": "^5.5.0",
     "react-toastr": "^3.0.0",

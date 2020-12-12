@@ -32,6 +32,13 @@ export default {
                     icon: 'feather icon-file-text'
                 },
                
+                {
+                    id: 'form-basic',
+                    title: 'Fee Invoice',
+                    type: 'item',
+                    url: '/LH/studentFee',
+                    icon: 'feather icon-file-text'
+                },
                 
             ]
         },
