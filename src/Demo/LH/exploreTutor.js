@@ -125,8 +125,23 @@ class exploreTutor extends Component {
     
                
     
-                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[4])}  >
+                return <button color="danger"  className="btn btn-success btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[4])}  >
                   check Tutor Schedule
+              </button>
+    
+    
+              }
+            }
+          },
+          {
+            name: "Feedback",
+            options: {
+              customBodyRender: (value, tableMeta, selectedRows, index) => {
+    
+               
+    
+                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[4])}  >
+                  Turor FeedBack
               </button>
     
     
