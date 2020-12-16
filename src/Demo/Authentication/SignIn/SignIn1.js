@@ -83,7 +83,14 @@ class SignUp1 extends React.Component {
 
 
                         <div className="auth-content">  
-                            
+                        <Breadcrumb />
+                    
+                    <div className="auth-bg">
+                        <span className="r" />
+                        <span className="r s" />
+                        <span className="r s" />
+                        <span className="r" />
+                    </div>
 
                             <div className="card">
                                 <div className="card-body text-center">

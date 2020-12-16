@@ -37,6 +37,13 @@ export default {
                     url: '/LH/TutorValidation',
                     icon: 'feather icon-file-text'
                 },
+                {
+                    id: 'form-basic',
+                    title: 'Schedule Meeting',
+                    type: 'item',
+                    url: '/LH/SchedualCall',
+                    icon: 'feather icon-file-text'
+                },
                
                 
             ]

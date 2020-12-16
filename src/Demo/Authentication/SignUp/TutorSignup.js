@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 import './../../../assets/scss/style.scss';
 import Aux from "../../../hoc/_Aux";
 import {  toast } from 'react-toastify';
-
+import Breadcrumb from "../../../App/layout/AdminLayout/Breadcrumb";
 
 class TutorSignup extends React.Component {
 
@@ -65,7 +65,14 @@ class TutorSignup extends React.Component {
                <form onSubmit={this.handleSubmit}>
                 <div className="auth-wrapper">
                     <div className="auth-content">
-                       
+                    <Breadcrumb />
+                    
+                    <div className="auth-bg">
+                        <span className="r" />
+                        <span className="r s" />
+                        <span className="r s" />
+                        <span className="r" />
+                    </div>
                         <div className="card">
                             <div className="card-body text-center">
                                 <div className="mb-4">
