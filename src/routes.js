@@ -16,6 +16,7 @@ const generateFee = React.lazy(() => import('./Demo/LH/generateFee'));
 const feePerSubject = React.lazy(() => import('./Demo/LH/feePerSubject')); 
 const studentFee = React.lazy(() => import('./Demo/LH/studentFee'));
 const SchedualCall = React.lazy(() => import('./Demo/LH/SchedualCall')); 
+const tutorFeedback = React.lazy(() => import('./Demo/LH/tutorFeedback')); 
 const routes = [
 
     { path: '/dashboard/default', exact: true, name: 'Default', component: DashboardDefault },
@@ -27,6 +28,7 @@ const routes = [
     { path: '/LH/feePerSubject', exact: false, name: 'feePerSubject', component: feePerSubject },  
     { path: '/LH/studentFee', exact: false, name: 'studentFee', component: studentFee },  
     { path: '/LH/SchedualCall', exact: false, name: 'SchedualCall', component: SchedualCall },  
+    { path: '/LH/tutorFeedback', exact: false, name: 'tutorFeedback', component: tutorFeedback },  
     
 
 ];

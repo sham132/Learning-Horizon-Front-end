@@ -22,9 +22,23 @@ class exploreTutor extends Component {
 
         this.state = { isOpen: false, data: '' };
         this.toogle_ = this.toogle_.bind(this);
+        this.toogle__ = this.toogle__.bind(this);
 
     }
 
+
+    
+    toogle__ = async (i) => {
+
+
+      this.props.history.push(
+        {
+          pathname:"/LH/tutorFeedback",
+          state: i
+        }
+      );
+
+    }
 
     toogle_ = async (i) => {
 
@@ -140,7 +154,7 @@ class exploreTutor extends Component {
     
                
     
-                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle_(tableMeta.rowData[4])}  >
+                return <button color="danger"  className="btn btn-primary btn-sm shadow-8 mb-8 " onClick={() => this.toogle__(tableMeta.rowData[4])}  >
                   Turor FeedBack
               </button>
     
